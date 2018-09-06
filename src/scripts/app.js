@@ -1,6 +1,5 @@
 var app = angular.module('fullStackApp', [
 	'ui.router',
-	'ui.bootstrap'
+	'ui.bootstrap',
+	'controllers'
 ]);
-
-
