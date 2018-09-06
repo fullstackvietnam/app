@@ -1,4 +1,4 @@
-angular.module('controllers', []).controller("MainController", _mainController)
+angular.module('main.controller', []).controller("MainController", _mainController)
 
 function _mainController($scope) {
 	$scope.message = 'Hola!';

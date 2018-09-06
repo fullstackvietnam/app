@@ -1,5 +1,9 @@
 var app = angular.module('fullStackApp', [
+	'ngAnimate',
+	'ngSanitize',
 	'ui.router',
 	'ui.bootstrap',
-	'controllers'
+	'app.controllers',
+	'app.routers',
+	'app.directives',
 ]);

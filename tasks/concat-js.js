@@ -1,7 +1,6 @@
 module.exports = function(gulp, $, browserSync) {
     gulp.task('concat-js', function() {
         return gulp.src([
-                'bower_components/jquery/dist/jquery.min.js',
                 'bower_components/offline/offline.min.js',
                 'bower_components/angular/angular.min.js',
                 'bower_components/angular-ui-router/release/angular-ui-router.min.js',
