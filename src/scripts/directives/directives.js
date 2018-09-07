@@ -1,3 +1,4 @@
 angular.module('app.directives', [
-	'click.directive'
+	'click.directive',
+	'enter.directive',
 ])
