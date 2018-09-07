@@ -1,15 +1,16 @@
 var app = angular.module('fullStackApp', [
 	'ngAnimate',
 	'ngSanitize',
-	// Thự viện
+	// Thư viện
 	'toastr',
 	'ui.router',
 	'ui.bootstrap',
-	// Ứng dụng
+	// App |  Hệ thống
 	'app.config',
 	'app.run',
+	'app.routers',
+	// App | Tùy chỉnh
 	'app.filters',
 	'app.controllers',
-	'app.routers',
 	'app.directives',
 ]);
