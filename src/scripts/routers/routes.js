@@ -1,3 +1,4 @@
 angular.module('app.routers', [
-	'home.router'
+	'home.router',
+	'about.router',
 ])

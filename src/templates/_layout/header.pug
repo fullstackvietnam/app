@@ -12,6 +12,6 @@ header.bg-light
 				.mr-auto
 				ul.navbar-nav(ng-controller="MenuController")
 					li.nav-item(ng-repeat="item in data" ui-sref-active="active")
-						a.nav-link(ui-sref="home") {{item.name}}
+						a.nav-link(ui-sref="{{item.url}}") {{item.name}}
 					
 <!-- ////////////// HEADER ////////////// -->
