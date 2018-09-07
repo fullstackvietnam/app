@@ -4,8 +4,16 @@ function _homeRoute($stateProvider, $urlRouterProvider) {
 	$stateProvider
 		.state('home', {
 			url: '/',
-			controller: 'HomeController',
-			templateUrl: '/views/home.html'	
+			views: {
+				"@": {
+					controller: 'HomeController',
+					templateUrl: '/views/home.html',
+				},
+				"menu@": {
+					controller: 'MenuController',
+					templateUrl: '/views/menu.html'
+				}
+			}
 		});
 	$urlRouterProvider.otherwise('/');
 }
