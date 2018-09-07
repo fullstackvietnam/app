@@ -1,3 +1,3 @@
 angular.module('app.directives', [
-	'filter.directive'
+	'click.directive'
 ])

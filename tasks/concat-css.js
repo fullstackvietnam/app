@@ -4,6 +4,7 @@ module.exports = function (gulp, $, browserSync) {
 				"node_modules/@fortawesome/fontawesome-free/css/all.min.css",
 				'bower_components/animate.css/animate.min.css',
 				'bower_components/offline/themes/offline-theme-default.css',
+				'bower_components/angular-toastr/dist/angular-toastr.min.css',
 				// // OWL
 				'src/css/offline-language-vietnam.min.css',
 			])

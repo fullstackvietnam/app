@@ -15,6 +15,7 @@ taskList.forEach(function (taskFile) {
 gulp.task('default', function (callback) {
 	runSequence(
 		'clean',
+		'copy',
 		'copy-db',
 		'copy-img',
 		'copy-fonts',
@@ -32,8 +33,9 @@ gulp.task('default', function (callback) {
 gulp.task('build', function (callback) {
 	runSequence(
 		'clean',
-		'copy-img',
+		'copy',
 		'copy-db',
+		'copy-img',
 		'copy-fonts',
 		'copy-favicon',
 		'concat-css',

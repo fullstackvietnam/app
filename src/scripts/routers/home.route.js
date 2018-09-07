@@ -1,9 +1,12 @@
 angular.module('home.router', []).config(_homeRoute)
 
-function _homeRoute($stateProvider, $urlRouterProvider) {
+function _homeRoute($stateProvider, $urlRouterProvider, $urlMatcherFactoryProvider) {
 	$stateProvider
 		.state('home', {
 			url: '/',
+			data : { 
+				pageTitle: 'Trang chủ' 
+			},
 			views: {
 				"@": {
 					controller: 'HomeController',
@@ -16,4 +19,5 @@ function _homeRoute($stateProvider, $urlRouterProvider) {
 			}
 		});
 	$urlRouterProvider.otherwise('/');
+	$urlMatcherFactoryProvider.caseInsensitive(true);
 }

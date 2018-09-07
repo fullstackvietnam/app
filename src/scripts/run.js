@@ -1,4 +1,6 @@
-angular.module('app.run', []).run(['$rootScope', '$state', '$stateParams', '$location', function ($rootScope, $state, $stateParams, $location) {
+angular.module('app.run', []).run(_runApp)
+
+function _runApp($rootScope, $state, $stateParams, $location) {
 	var path = $location.path();
 	console.log('Đã hoàn thành chạy ứng dụng! - ' + path)
 	$rootScope.$state = $state;
@@ -15,4 +17,4 @@ angular.module('app.run', []).run(['$rootScope', '$state', '$stateParams', '$loc
 		console.log(event);
 		console.log(toState);
 	});
-}])
+}

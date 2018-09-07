@@ -4,6 +4,9 @@ function _aboutRoute($stateProvider, $urlRouterProvider) {
 	$stateProvider
 		.state('about', {
 			url: '/about',
+			data : { 
+				pageTitle: 'Về chúng tôi' 
+			},
 			views: {
 				"@": {
 					controller: 'AboutController',
