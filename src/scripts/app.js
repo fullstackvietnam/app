@@ -5,6 +5,7 @@ var app = angular.module('fullStackApp', [
 	'ui.router',
 	'ui.bootstrap',
 	// Ứng dụng
+	'app.config',
 	'app.controllers',
 	'app.routers',
 	'app.directives',

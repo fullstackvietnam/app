@@ -15,5 +15,4 @@ function _aboutRoute($stateProvider, $urlRouterProvider) {
 				}
 			}
 		});
-	$urlRouterProvider.otherwise('/home');
 }
