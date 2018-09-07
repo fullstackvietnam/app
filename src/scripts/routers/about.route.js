@@ -3,7 +3,7 @@ angular.module('about.router', []).config(_aboutRoute)
 function _aboutRoute($stateProvider, $urlRouterProvider) {
 	$stateProvider
 		.state('about', {
-			url: '/',
+			url: '/about',
 			views: {
 				"@": {
 					controller: 'AboutController',
