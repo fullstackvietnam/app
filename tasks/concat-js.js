@@ -1,5 +1,6 @@
 module.exports = function(gulp, $, browserSync) {
     gulp.task('concat-js', function() {
+		let ngAnnotate = require('gulp-ng-annotate');
         return gulp.src([
                 'bower_components/offline/offline.min.js',
                 'bower_components/angular/angular.min.js',
@@ -10,7 +11,8 @@ module.exports = function(gulp, $, browserSync) {
                 'bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js',
                 'bower_components/angular-toastr/dist/angular-toastr.min.js',
                 'bower_components/angular-toastr/dist/angular-toastr.tpls.min.js',
-            ])
+			])
+			.pipe(ngAnnotate())
             .pipe($.concat('addons.js'))
             .pipe(gulp.dest('./dist/js'));
     });
