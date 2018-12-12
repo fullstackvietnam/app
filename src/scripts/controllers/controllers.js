@@ -3,4 +3,6 @@ angular.module('app.controllers', [
 	'menu.controller',
 	'home.controller',
 	'about.controller',
+	'contact.controller',
+	'details.controller',
 ])

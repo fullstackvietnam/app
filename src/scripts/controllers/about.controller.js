@@ -51,12 +51,13 @@ function _aboutController($scope, $http) {
 
 	$http({
 		method: 'GET', // POST, PUT, DELETE
-		url: 'https://www.w3schools.com/angular/customers.php',
+		url: 'http://localhost:7000/api/v1/products',
 	}).then(function (response) {
-		$scope.data = eval(response.data.records);
+		console.log(response.data.lists)
+		$scope.data = eval(response.data.lists);
 
 		// Phân trang
-		$scope.totalItems = response.data.records.length;
+		$scope.totalItems = response.data.lists.length;
 		$scope.lists = $scope.data.slice(
 			($scope.currentPage - 1) * $scope.itemsPerPage,
 			$scope.currentPage * $scope.itemsPerPage

@@ -1,8 +1,11 @@
 .row
 	.col
 		.item(ng-repeat="item in lists")
-			h2 {{item.Name}} 
-			p {{item.Country}} 
+			h2 
+				a(ui-sref="details({id: item.id})") {{item.name}} 
+			p {{item.code}} 
+			p
+				img(ng-src="http://localhost:7000/{{item.img}}", alt="", srcset="")
 		//- Phân trang
 		.pagebottom(ng-show="data.length")
 			.row.align-items-center
